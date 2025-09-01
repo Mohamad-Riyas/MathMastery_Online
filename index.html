@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>MathMastery Online — Grade 10 & 11 Maths Tuition</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Live online Grade 10 & 11 mathematics classes — free trial, small groups, past-paper practice and recorded lessons." />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="container">
+        <nav class="nav">
+        <div class="brand">
+            <div class="logo">MM</div>
+            <div class="brand-text">
+                <h1>MathMastery Online</h1>
+                <div class="subtitle">Grade 10 & 11 • Live interactive classes</div>
+            </div>
+        </div>
+
+        <div class="nav-links">
+            <a href="#courses" class="ghost"><i class="fas fa-graduation-cap"></i> Courses</a>
+            <a href="#timetable" class="ghost"><i class="fas fa-calendar-alt"></i> Schedule</a>
+            <a href="#resources" class="ghost"><i class="fas fa-book"></i> Resources</a>
+            <a href="#contact" class="ghost"><i class="fas fa-envelope"></i> Contact</a>
+            <a class="btn" id="bookTrial"><i class="fas fa-rocket"></i> Booking </a>
+            <a href="#" class="ghost" id="openPortal"><i class="fas fa-user-graduate"></i> Student Portal</a>
+        </div>
+        
+        <!-- Theme Toggle Button -->
+        <div class="theme-toggle">
+            <button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode">
+                <i class="fas fa-moon" id="themeIcon"></i>
+            </button>
+        </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- HERO -->
+        <section class="hero">
+        <div>
+            <h1>Boost your Grade 10 & 11 Maths score with expert online classes </h1>
+            <p class="lead">Small groups · Live interactive lessons · Past-paper practice · Clear, step-by-step explanations tailored to exam syllabuses.</p>
+
+            <div class="cta-row">
+            <a class="btn" id="heroTrial">Contact Instructor</a>
+            <a class="ghost" href="#courses">View Courses</a>
+            </div>
+
+            <div style="margin-top:22px" class="grid-3">
+            <div class="feature">
+                <i class="fas fa-chalkboard-teacher" style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                <strong>Expert Tutor</strong>
+                <p class="muted small">Degree-qualified tutor with 2+ years teaching Grades 10 & 11.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-target" style="font-size: 2rem; color: var(--accent); margin-bottom: 1rem;"></i>
+                <strong>Exam-focused</strong>
+                <p class="muted small">Past-paper practice, exam strategies and marking-style answers.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-clock" style="font-size: 2rem; color: var(--success); margin-bottom: 1rem;"></i>
+                <strong>Flexible Scheduling</strong>
+                <p class="muted small">Multiple weekday and weekend batches to suit busy students.</p>
+            </div>
+            </div>
+
+            <div style="margin-top:20px" class="card">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+                <div>
+                <div class="muted small">Free Seminar Available</div>
+                <strong>Comming soon.....</strong>
+                </div>
+                <div class="pill">Limited seats</div>
+            </div>
+            </div>
+        </div>
+
+        <aside class="hero-right">
+            <div class="card">
+            <div style="display:flex;gap:12px;align-items:center">
+                <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=400&q=60" alt="Tutor" style="width:84px;height:84px;border-radius:12px;object-fit:cover">
+                <div>
+                <div style="font-weight:700">M.Nazmiya — Senior Maths Tutor</div>
+                <div class="muted small">BSc (Hons) Computer Science • 2 years teaching experience • Paper specialist</div>
+                </div>
+            </div>
+
+            <hr style="margin:12px 0" />
+
+            <div class="stat">
+                <div>
+                <div class="muted small">Typical class size</div>
+                <strong>above 10 students</strong>
+                </div>
+                <div>
+                <div class="muted small">Pass rate</div>
+                <strong>92% improvement*</strong>
+                </div>
+            </div>
+
+            <div style="margin-top:12px">
+                <a class="btn" id="watchIntro"><i class="fas fa-play"></i> Free Video</a>
+                <a class="ghost_a" id="downloadPapers"><i class="fas fa-download"></i> Download Past Papers</a>
+            </div>
+            </div>
+
+            <div class="card">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+                <div>
+                <div class="muted small">Popular plan</div>
+                <strong>Monthly — 8 classes</strong>
+                </div>
+                <div style="text-align:right">
+                <div class="muted small">From</div>
+                <strong>LKR 600 / month</strong>
+                </div>
+            </div>
+            </div>
+        </aside>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+        <div class="card">
+            <h2>About the Instructor</h2>
+            <div style="display:flex;gap:18px;align-items:center;margin-top:6px;flex-wrap:wrap">
+            <img src="video/international-day-education-celebration.jpg" alt="Instructor" style="width:120px;border-radius:12px;object-fit:cover">
+            <div>
+                <p style="margin:0"><strong>Nazmiya — Mathematics Tutor</strong></p>
+                <p class="muted small" style="max-width:700px">I focus on building students' conceptual understanding and exam technique. Lessons are interactive with worked examples, quizzes and past-paper practice. Clear learning objectives and progress tracking ensure students gain confidence and results.</p>
+                <div style="margin-top:10px">
+                <a class="btn" id="introVideo"><i class="fas fa-play-circle"></i> Sample Video</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- COURSES -->
+        <section id="courses">
+        <h2>Courses & Curriculum</h2>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:12px">
+            <div class="card course">
+            <img src="video/grade 10" alt="Grade 10 image">
+            <div>
+                <h3><i class="fas fa-calculator" style="color: var(--primary); margin-right: 0.5rem;"></i>Grade 10 Mathematics</h3>
+                <p class="muted small"><i class="fas fa-book-open" style="margin-right: 0.5rem;"></i>Topics: Algebra, Geometry, Trigonometry, Coordinate Geometry, Data handling.</p>
+                <p class="muted small"><i class="fas fa-clock" style="margin-right: 0.5rem;"></i>Format: Weekly 180-min live lessons, worksheets.</p>
+                <a class="btn" href="#" onclick="openEnroll('Grade 10'); return false;"><i class="fas fa-user-plus"></i> Enroll / Trial</a>
+            </div>
+            </div>
+
+            <div class="card course">
+            <img src="video/grade 11.png" alt="Grade 11 image">
+            <div>
+                <h3><i class="fas fa-chart-line" style="color: var(--accent); margin-right: 0.5rem;"></i>Grade 11 Mathematics</h3>
+                <p class="muted small"><i class="fas fa-book-open" style="margin-right: 0.5rem;"></i>Topics: Advanced Algebra, Calculus basics, Trigonometry, Functions, Exam practice.</p>
+                <p class="muted small"><i class="fas fa-clock" style="margin-right: 0.5rem;"></i>Format: Weekly 180-min live lessons, topic tests, past-paper sessions.</p>
+                <a class="btn" href="#" onclick="openEnroll('Grade 11'); return false;"><i class="fas fa-user-plus"></i> Enroll / Trial</a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Class Timetable Section -->
+    <section id="timetable">
+    <h2>Weekly Class Timetable</h2>
+    <div class="table-wrapper">
+    <table class="timetable">
+        <thead>
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="time">7:00 – 8:30 PM</td>
+            <td>–</td>
+            <td class="grade10">Grade 10</td>
+            <td class="grade10">Grade 10</td>
+            <td>–</td>
+            <td>–</td>
+            <td class="grade11">Grade 11</td>
+            <td class="grade11">Grade 11</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+
+        </tbody>
+        </table>
+    </div>
+    </section>
+    <!-- Resources / Past Papers -->
+    <section id="resources">
+        <h2>Past Papers & Resources</h2>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-top:12px">
+            <div class="card">
+                <i class="fas fa-file-pdf" style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem; display: block;"></i>
+                <h3>Grade 10 Past Papers</h3>
+                <p class="muted small">Access previous exam papers for practice and preparation.</p>
+                <a class="btn" id="downloadGrade10"><i class="fas fa-download"></i> Download Papers</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-file-pdf" style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem; display: block;"></i>
+                <h3>Grade 11 Past Papers</h3>
+                <p class="muted small">Practice past papers to master exam-style questions.</p>
+                <a class="btn" id="downloadGrade11"><i class="fas fa-download"></i> Download Papers</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-clipboard-list" style="font-size: 3rem; color: var(--success); margin-bottom: 1rem; display: block;"></i>
+                <h3>Worksheets & Notes</h3>
+                <p class="muted small">Extra exercises and concept notes to reinforce learning.</p>
+                <a class="btn" href="#contact"><i class="fas fa-envelope"></i> Request Access</a>
+            </div>
+        </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+        <h2>Contact & Enquiries</h2>
+        <div style="display:flex;gap:24px;flex-wrap:wrap;margin-top:12px">
+            <div class="card" style="flex:1; min-width:280px">
+            <h3>Get in Touch</h3>
+            <p class="muted small">Reach out via WhatsApp or Email. We’ll respond quickly to your queries.</p>
+            <div class="rows" style="margin-top:10px">
+                <a href="https://wa.me/+94786280177" target="_blank" class="btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="mailto:engnazm01@gmail.com" class="ghost"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+            </div>
+
+            <div class="card" style="flex:1; min-width:280px">
+            <h3>Send a Message</h3>
+            <form id="contactForm">
+                <div class="form-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-comment"></i>
+                    <textarea name="message" rows="4" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+            </form>
+            </div>
+        </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials">
+            <h2>What Our Students Say</h2>
+            <div class="testimonials-grid">
+                <div class="card testimonial">
+                    <div class="testimonial-header">
+                        <img src="video/boy.png" alt="Student" class="testimonial-avatar">
+                        <div>
+                            <h4>Abdhullah Ahmed</h4>
+                            <p class="muted small">Grade 11 Student</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p>"Nazmiya madam's teaching method is excellent. He explains complex concepts in simple terms and the past-paper practice really helped me improve my exam scores."</p>
+                </div>
+                
+                <div class="card testimonial">
+                    <div class="testimonial-header">
+                        <img src="video/girl.png" alt="Student" class="testimonial-avatar">
+                        <div>
+                            <h4>M.Nazriya</h4>
+                            <p class="muted small">Grade 10 Student</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p>"The small group classes are perfect for asking questions. I've seen a huge improvement in my understanding of algebra and geometry."</p>
+                </div>
+                
+                <div class="card testimonial">
+                    <div class="testimonial-header">
+                        <img src="video/boy.png" alt="Student" class="testimonial-avatar">
+                        <div>
+                            <h4>M.Rilwan</h4>
+                            <p class="muted small">Grade 11 Student</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p>"The exam strategies and marking-style answers were game-changers. My confidence has improved significantly and I'm scoring much better now."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section id="cta" class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to Excel in Mathematics?</h2>
+                <p class="lead">Join our live interactive classes and start your journey towards mathematical mastery today.</p>
+                <div class="cta-buttons">
+                    <a class="btn btn-large" id="finalTrial">
+                        <i class="fas fa-rocket"></i> Start Free Trial
+                    </a>
+                    <a class="ghost btn-large" href="#contact">
+                        <i class="fas fa-envelope"></i> Get in Touch
+                    </a>
+                </div>
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>No commitment required</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Small group learning</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Expert guidance</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section footer-brand-section">
+                        <div class="footer-brand">
+                            <div class="footer-logo">
+                                <div class="logo">MM</div>
+                            </div>
+                            <div class="brand-text">
+                                <h3>MathMastery Online</h3>
+                                <p class="brand-subtitle">Excellence in Mathematics Education</p>
+                            </div>
+                        </div>
+                        <p class="footer-description">Empowering Grade 10 & 11 students with expert mathematics tuition. Our proven methodology combines interactive learning, personalized attention, and comprehensive exam preparation to ensure academic success.</p>
+                        <div class="footer-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Students</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">95%</span>
+                                <span class="stat-label">Success Rate</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">2+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-heading">Quick Navigation</h4>
+                        <ul class="footer-links">
+                            <li><a href="#courses"><i class="fas fa-graduation-cap"></i>Courses & Curriculum</a></li>
+                            <li><a href="#timetable"><i class="fas fa-calendar-alt"></i>Class Schedule</a></li>
+                            <li><a href="#resources"><i class="fas fa-book"></i>Study Resources</a></li>
+                            <li><a href="#testimonials"><i class="fas fa-star"></i>Student Reviews</a></li>
+                            <li><a href="#contact"><i class="fas fa-envelope"></i>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-heading">Contact Information</h4>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Email</span>
+                                    <a href="mailto:engnazm01@gmail.com">engnazm01@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">WhatsApp</span>
+                                    <a href="https://wa.me/+94786280177" target="_blank">+94 78 628 0177</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Response Time</span>
+                                    <span>Within 2 hours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-heading">Connect With Us</h4>
+                        <p class="social-description">Follow us for study tips, exam updates, and educational content.</p>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/share/1E8sKXWWQZ/" target="_blank" class="social-link facebook" aria-label="Follow us on Facebook">
+                                <div class="social-icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </div>
+                                <div class="social-content">
+                                    <span class="social-name">Facebook</span>
+                                    <span class="social-desc">Latest updates</span>
+                                </div>
+                            </a>
+                            <a href="https://www.instagram.com/maths_mastery_online?utm_source=qr&igsh=MWZhbHdxZDdwOHk3dg==" target="_blank" class="social-link instagram" aria-label="Follow us on Instagram">
+                                <div class="social-icon">
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                                <div class="social-content">
+                                    <span class="social-name">Instagram</span>
+                                    <span class="social-desc">Study tips & content</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-divider"></div>
+                
+                <div class="footer-bottom">
+                    <div class="footer-bottom-content">
+                        <div class="copyright">
+                            <p>&copy; 2025 MathMastery Online. All rights reserved.</p>
+                            <p class="copyright-subtitle">Empowering students to achieve mathematical excellence</p>
+                        </div>
+                        <div class="footer-bottom-links">
+                            <a href="#" class="footer-link">Privacy Policy</a>
+                            <span class="separator">•</span>
+                            <a href="#" class="footer-link">Terms of Service</a>
+                            <span class="separator">•</span>
+                            <a href="#" class="footer-link">Cookie Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Student Portal Modal -->
+    <div class="modal" id="portalModal">
+        <div class="modal-card">
+        <h3>Student Portal</h3>
+        <p class="muted small">Login to access class recordings and resources.</p>
+        <form id="portalForm">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <div style="display:flex;gap:12px;margin-top:12px">
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="ghost" id="closePortal">Close</button>
+            </div>
+        </form>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
